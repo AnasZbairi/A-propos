@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>À propos - Around The WORLD</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #2c7be5;
+        }
+        p {
+            line-height: 1.6;
+            font-size: 16px;
+        }
+        .info {
+            margin-top: 30px;
+        }
+        .info p {
+            margin: 8px 0;
+        }
+        .buttons {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .buttons a {
+            text-decoration: none;
+            background-color: #2c7be5;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 5px;
+            font-size: 16px;
+            display: inline-block;
+        }
+        .buttons a:hover {
+            background-color: #1a5bb8;
+        }
+        /* Formulaire */
+        .contact-form {
+            margin-top: 40px;
+            display: none;
+        }
+        form {
+            max-width: 500px;
+            margin: auto;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 15px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #2c7be5;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1a5bb8;
+        }
+    </style>
+
+    <script>
+        function ouvrirFormulaire() {
+            document.getElementById("formulaireContact").style.display = "block";
+        }
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <h1>À propos</h1>
+
+    <p>
+        🌍 <strong>Bienvenue sur Around The WORLD !</strong><br>
+        Créé par <strong>Nouzha Mounaji</strong>, notre site est dédié aux passionnés de voyages.
+        Découvrez des destinations incroyables, des activités uniques et des conseils pour vivre
+        des aventures inoubliables.
+    </p>
+
+    <div class="info">
+        <p>📍 <strong>Notre bureau :</strong> Hassan, Rabat, Province de Kénitra, Maroc – 10000</p>
+        <p>📞 <strong>Téléphone :</strong> 642388953</p>
+        <p>✉️ <strong>Email :</strong> nouzhamounaji@gmail.com</p>
+    </div>
+
+    <div class="buttons">
+        <a href="#contact" onclick="ouvrirFormulaire()">Contactez-nous</a>
+    </div>
+
+    <!-- Formulaire de contact -->
+    <div class="contact-form" id="formulaireContact">
+        <h2>Formulaire de contact</h2>
+        <form>
+            <input type="text" placeholder="Nom complet" required>
+            <input type="tel" placeholder="Numéro de téléphone" required>
+            <input type="email" placeholder="Adresse email" required>
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
